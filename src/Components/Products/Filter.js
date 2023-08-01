@@ -16,7 +16,7 @@ export function Filter({ dgplusexpress, setDigiplusexpress, sellerexpress, setse
 
 
             <div className=' py-3'>
-                  <a className='d-flex flex-row justify-content-between py-2 span ' onClick={() => setShowdgp(!showdgp)} >
+                  <a className='d-flex flex-row justify-content-between py-2 span pointer' onClick={() => setShowdgp(!showdgp)} >
                         <span className='span'>خدمات دیجی پلاس</span>
                         <img src="images/svgexport-37.svg"></img>
                   </a>
@@ -41,7 +41,7 @@ export function Filter({ dgplusexpress, setDigiplusexpress, sellerexpress, setse
                   <p className='filter-about-text'>ارسال مستقیم و سریع تر</p>
             </div>
             <div className='border-top'>
-                  <a className='d-flex flex-row justify-content-between py-2 span' onClick={() => setShowlimit(!showlimit)}>
+                  <a className='d-flex flex-row justify-content-between py-2 span pointer' onClick={() => setShowlimit(!showlimit)}>
                         <span className='span'>محدوده قیمت</span>
                         <img src="images/svgexport-37.svg"></img>
                   </a>
