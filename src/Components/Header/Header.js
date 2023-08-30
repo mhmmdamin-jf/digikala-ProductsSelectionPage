@@ -1,6 +1,3 @@
-
-
-
 export function Header() {
       return (<>
             <div className=' d-flex'>
@@ -16,7 +13,7 @@ export function Header() {
                               </a>
                         </div>
                         <div className='col-sm-6  col-md-6 col-lg-6'>
-                              <div className='px-2 px-4-lg py-2 bg-search pointer'>
+                              <div className='px-2 px-4-lg py-2 bg-search pointer position'>
                                     <a>
                                           <img src='images/svgexport-3.svg' />
                                           <span className='search-text'>جستجو</span>
@@ -25,10 +22,14 @@ export function Header() {
                         </div>
                         <div className='col-sm-5 col-md-4 col-lg-3 col-xl-2 me-md-auto '>
                               <div className="row align-items-center">
-                                    <div className="col-8 signin">
-                                          <button className=' signin w-auto py-2 px-4 btn-outline-secondary  row align-items-center'>
-                                                <div className="col-3">   <img src='images/svgexport-6.svg' className=""></img>
-                                                </div> <div className='col-9 '>ورود | ثبت‌نام</div>
+                                    <div className="col-8 ">
+                                          <button className='signin w-full btn btn-outline-secondary d-flex flex-row justify-content-evenly border border-outline border-2'>
+                                                <div className="col-1">
+                                                      <img src='images/svgexport-6.svg' className=""></img>
+                                                </div>
+                                                <div >
+                                                      <span className="txt-small">ورود | ثبت‌نام</span>
+                                                </div>
                                           </button>
                                     </div>
                                     <div className="col-1">
@@ -43,7 +44,7 @@ export function Header() {
                                     </div>
                               </div>
                         </div>
-                  </div>
+                  </div >
 
                   <div className='row nav-font mt-2 border-bottom py-2'>
                         <div className='col-lg-9 d-md-none d-sm-none d-lg-inline '>
@@ -101,9 +102,7 @@ export function Header() {
                   <p>
                         گوشی موبایل
                   </p>
-            </div>
-
-
+            </div >
       </>
       );
 }

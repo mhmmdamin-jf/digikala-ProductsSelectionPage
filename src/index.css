@@ -1,6 +1,15 @@
+ @font-face {
+       font-family: 'iran-sans';
+       src: url(./font/Sans\ a4fran3.eot) format('eot'),
+             url(./font/Sans\ a4fran3.woff) format('woff'),
+             url(./font/Sans\ a4fran3.ttf) format('ttf'),
+             url(./font/Sans\ a4fran3.svg) format('svg');
+ }
+
  body {
        direction: rtl;
-
+       font-family: 'iran-sans';
+       font-size: small;
  }
 
  .w-full {
@@ -25,7 +34,6 @@
  }
 
  .signin {
-
        border: 1px solid #ebebef;
        border-radius: 8px;
        font-size: 12px;
@@ -115,6 +123,10 @@
  .txt-sort-op {
        color: #828399;
        margin: 5px;
+ }
+
+ .txt-small {
+       font-size: smaller;
  }
 
  .product {
