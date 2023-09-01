@@ -1,7 +1,7 @@
 
 export function Item({ item }) {
       return (
-            <div className='col-lg-3 item '>
+            <div className='col-lg-3 mt-4'>
                   <div className='d-flex flex-column product '>
                         <div>
                               <img className='img-fluid' src={item.image} />

@@ -64,7 +64,7 @@ export function Products({ items_filtered, filter, items_sorted, dispatch, sortb
             <Sort setSortby={setSortby} sortby={sortby} sort_type={'mostStar'} sort_name={'پیشنهاد خریداران'} dispatch={dispatch}></Sort>
             <div className='me-auto text-no-wrap nav-font txt-sort-op'>{items_filtered.length === 0 ? items_sorted.length : num_items1.current} کالا</div>
           </div>
-          <div className='row border-top me-1'>
+          <div className='row '>
             {items_filtered.length !== 0 ?
               (items_filtered)
                 .map((item, i) => <Item item={item} key={i} />) :

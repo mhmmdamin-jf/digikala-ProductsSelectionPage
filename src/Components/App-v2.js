@@ -1,8 +1,7 @@
-import { useReducer, useEffect } from 'react';
+import { useState, useEffect, useReducer } from 'react';
 import { Footer } from './Footer/Footer';
-import { Header } from './Header/Header-v2';
+import { Header } from './Header/Header';
 import { Products } from './Products/Products-v2';
-import { useKey } from './Custom-Hooks/useKey';
 import '../index.css';
 const items_Array = [
   {
@@ -100,21 +99,11 @@ const initialData = {
   items1: items_Array, sortby1: 'relavent', filter: {
     dgplusexpress: false, sellerexpress1: false, limitvalue: { min: 0, max: 99999999 }
     , available1: false, availableInDgkala: false
-  }, items_sorted1: [], loading: false, items_filtered: [], filterOn: false, openSearch: false
+  }, items_sorted1: [], loading: false, items_filtered: [], filterOn: false
 };
-
-
 
 function Reducer(state, action) {
   switch (action.type) {
-    case 'exitSearchBox':
-      return ({ ...state, openSearch: false })
-    case 'toggleSearchBox':
-      return ({ ...state, openSearch: true });
-    case 'closeSearchBox':
-      return ({ ...state, openSearch: false });
-    case 'openSearchBox':
-      return ({ ...state, openSearch: true });
     case 'resetFilters':
       return ({ ...state, filter: initialData.filter })
     case "setavailableInDgkala":
@@ -157,12 +146,10 @@ function Reducer(state, action) {
   }
 }
 export default function App() {
-  const [{ openSearch, loading, sortby1, items1, filter, items_sorted1, items_filtered }, dispatch] = useReducer(Reducer, initialData);
-  useKey('q', () => dispatch({ type: 'toggleSearchBox' }, true));
-  useKey('escape', () => dispatch({ type: 'exitSearchBox' }, false));
+  const [{ loading, sortby1, items1, filter, items_sorted1, items_filtered }, dispatch] = useReducer(Reducer, initialData);
   return (
-    <div className='w-full' >
-      <Header openSearch={openSearch} dispatch={dispatch} />
+    <div className=' w-full ' >
+      <Header />
       <Products sortby1={sortby1} items_sorted={items_sorted1} loading={loading} filter={filter} dispatch={dispatch} items_filtered={items_filtered} />
       <Footer />
     </div>
