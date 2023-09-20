@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Contact_About } from "./Contact_About";
 import { Download } from "./Download";
-import { Footer_co } from "./Footer_co";
-import { Footer_dgItems } from "./Footer_dgItems";
+import Footer_co from "./Footer_co";
+import Footer_dgItems from "./Footer_dgItems";
+import { memo } from "react";
 
-export function Footer() {
+function Footer() {
   const other_co = ['images/مجله اینترنتی دیجی‌کالا مگ.svg', 'images/مگنت - پلتفرم بررسی و انتخاب کالا.svg', 'images/مرکز نوآوری و فناوری گروه دیجی‌کالا.svg',
     'images/مجله اینترنتی دیجی‌کالا مگ.svg', 'images/گنجه.svg', 'images/کمدا اپلیکیشنی برای خرید و فروش.svg', 'images/سیستم حمل و نقل دیجی‌کالا.svg',
     'images/دیجیکالا مهر - زنجیره مهربانی و لبخند.svg', 'images/دیجی‌کالا سرویس.svg', 'images/دیجی‌کالا بیزینس.svg', 'images/دیجی‌فای.svg',
@@ -83,3 +84,4 @@ export function Footer() {
   );
 }
 
+export default memo(Footer);

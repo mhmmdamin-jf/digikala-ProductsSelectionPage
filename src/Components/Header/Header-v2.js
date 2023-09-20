@@ -1,8 +1,12 @@
+import { memo } from "react";
+import SearchBox from "./SearchBox/SearchBox";
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { openSearchBox } from "./SearchBox/SeachBoxSlice";
+import { useDispatch } from "react-redux";
 
-import SearchBox from "./SearchBox";
-
-export function Header({ openSearch, dispatch }) {
-
+function Header() {
+      const dispatcher = useDispatch();
+      const openSearch = useSelector(store => store.searchBox.openSearch)
       return (<div className="header">
 
             <div className=' d-flex'>
@@ -19,9 +23,9 @@ export function Header({ openSearch, dispatch }) {
                         </div>
                         <div className='col-sm-6 col-md-6 col-lg-6 box '>
                               {openSearch ?
-                                    <SearchBox dispatch={dispatch} />
+                                    <SearchBox />
                                     :
-                                    <div onClick={() => dispatch({ type: 'openSearchBox' })} className='px-2 px-4-lg py-2 bg-search pointer position'>
+                                    <div onClick={() => { dispatcher(openSearchBox()) }} className='px-2 px-4-lg py-2 bg-search pointer position'>
                                           <a>
                                                 <img src='images/svgexport-3.svg' />
                                                 <span className='search-text'>جستجو</span>
@@ -56,7 +60,7 @@ export function Header({ openSearch, dispatch }) {
                   </div >
 
                   <div className='row nav-font mt-2 border-bottom py-2'>
-                        <div className='col-lg-9 d-md-none d-sm-none d-lg-inline '>
+                        <div className='col-lg-9 d-md-none d-none d-lg-inline '>
                               <ul className="list-group list-group-horizontal align-items-center nav-ul" >
                                     <li className="pointer txt-underline-op mx-2 d-sm-none d-md-none d-lg-inline">
                                           <img src='images/svgexport-9.svg'></img>
@@ -112,6 +116,8 @@ export function Header({ openSearch, dispatch }) {
                         گوشی موبایل
                   </p>
             </div >
-      </div>
+      </div >
       );
 }
+
+export default memo(Header);

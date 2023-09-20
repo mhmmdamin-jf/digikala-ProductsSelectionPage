@@ -19,9 +19,6 @@
  .bg-search {
        background-color: #f1f2f4;
        border-radius: 8px;
-       /* padding-top: 5px;
-      padding-bottom: 5px; */
-
  }
 
  .line-1 {
@@ -41,12 +38,10 @@
 
  .line {
        font-size: 25px;
-
        color: #c2c2c2;
  }
 
  .nav-font {
-
        margin-top: -5px;
        font-size: 12px;
  }
@@ -339,7 +334,6 @@
 
  }
 
-
  .nav-ul {
        margin: 0;
        padding: 0;
@@ -355,7 +349,6 @@
        color: #9e9fb1;
 
  }
-
 
  .txt-red {
        color: #ee384e;

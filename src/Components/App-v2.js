@@ -1,8 +1,9 @@
-import { useReducer, useEffect } from 'react';
-import { Footer } from './Footer/Footer';
-import { Header } from './Header/Header-v2';
+import { useReducer } from 'react';
+import Footer from './Footer/Footer';
+import Header from './Header/Header-v2';
 import { Products } from './Products/Products-v2';
 import { useKey } from './Custom-Hooks/useKey';
+import { useHotkeys } from 'react-hotkeys-hook';
 import '../index.css';
 const items_Array = [
   {
@@ -103,8 +104,6 @@ const initialData = {
   }, items_sorted1: [], loading: false, items_filtered: [], filterOn: false, openSearch: false
 };
 
-
-
 function Reducer(state, action) {
   switch (action.type) {
     case 'exitSearchBox':
@@ -156,10 +155,11 @@ function Reducer(state, action) {
       console.warn('reducer issue');
   }
 }
+
 export default function App() {
   const [{ openSearch, loading, sortby1, items1, filter, items_sorted1, items_filtered }, dispatch] = useReducer(Reducer, initialData);
-  useKey('q', () => dispatch({ type: 'toggleSearchBox' }, true));
   useKey('escape', () => dispatch({ type: 'exitSearchBox' }, false));
+  useHotkeys('ctrl+q', (e) => { e.preventDefault(); dispatch({ type: 'toggleSearchBox' }); });
   return (
     <div className='w-full' >
       <Header openSearch={openSearch} dispatch={dispatch} />

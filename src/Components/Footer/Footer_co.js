@@ -1,4 +1,4 @@
-export function Footer_co({ image }) {
+function Footer_co({ image }) {
       return (
             <div className='col-auto p-4 px-2 border-bottom border-end border-start footer3-img text-center'>
                   <a className='m-4'>
@@ -6,4 +6,6 @@ export function Footer_co({ image }) {
                   </a>
             </div>
       );
-}
+};
+
+export default Footer_co;
