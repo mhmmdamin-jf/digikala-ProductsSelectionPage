@@ -4,21 +4,21 @@ export function Download() {
                   <div className="col-sm-12 col-xl-6">
                         <div className=' row   justify-content-center '>
                               <div className='col-sm-12 col-md-12 ms-xl-auto  w-30 mb-sm-2'>
-                                    <img src='images/footerlogo2.png' className='w-30'></img>
+                                    <img src='/images/footerlogo2.png' className='w-30'></img>
                                     <span className='text-white mx-1'>دانلود اپلیکیشن دیجیکالا</span>
                               </div>
                         </div>
                   </div>
                   <div className="col-sm-12 col-xl-5 ">
                         <div className="row justify-content-center">
-                              <App_links image={'images/coffe-bazzar.svg'} />
-                              <App_links image={'images/myket.svg'} />
-                              <App_links image={'images/sib-app.svg'} />
+                              <App_links image={'/images/coffe-bazzar.svg'} />
+                              <App_links image={'/images/myket.svg'} />
+                              <App_links image={'/images/sib-app.svg'} />
                         </div>
                   </div>
                   <div className="col-sm-12 col-xl-1 text-center">
                         <div className="row justify-content-center">
-                              <App_links image={'images/More.svg'} />
+                              <App_links image={'/images/More.svg'} />
                         </div>
                   </div>
             </div >

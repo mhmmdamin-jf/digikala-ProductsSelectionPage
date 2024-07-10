@@ -1,0 +1,21 @@
+.ItemCount {
+      display: flex;
+      flex-direction: row;
+      max-width: 90px;
+      border: .03rem solid #ee384e;
+      padding: 5px;
+      border-radius: 7px;
+      color: #ee384e;
+      justify-content: space-between;
+      background-color: #fff;
+}
+
+.ItemCount * {
+      margin-block: auto;
+      text-align: center;
+}
+
+.countButton * {
+      width: 20px;
+
+}

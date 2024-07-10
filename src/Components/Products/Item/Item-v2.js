@@ -1,7 +1,7 @@
-
+import { Link } from 'react-router-dom'
 export function Item({ item }) {
       return (
-            <div className='col-lg-3 item '>
+            <Link to={'/mobiles/1'} className='col-lg-3 item text-dark'>
                   <div className='d-flex flex-column product '>
                         <div>
                               <img className='img-fluid' src={item.image} />
@@ -32,5 +32,5 @@ export function Item({ item }) {
                               </div>
                         </div>
                   </div>
-            </div>);
+            </Link>);
 }

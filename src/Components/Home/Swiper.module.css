@@ -1,0 +1,131 @@
+.slideContainer {
+      z-index: 1;
+}
+
+
+.swBtnNav {
+      background-color: #444;
+      padding: 20px;
+      margin: 20px;
+}
+
+.slider {
+      background-color: #fff;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+
+      &:hover .navBtnContainer {
+            opacity: 90%;
+      }
+
+}
+
+.slideSlide * {
+      min-height: 300px;
+      width: 100%;
+      margin-inline-start: auto;
+      object-fit: cover;
+}
+
+.navBtnContainer {
+      right: 100px;
+      position: absolute;
+      bottom: 10px;
+      z-index: 999;
+      right: 50px;
+      opacity: 0;
+      transition: .15s all;
+      transition-delay: .14s;
+}
+
+.btn {
+      background-color: #ccc;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      bottom: 15px;
+      margin: 4px;
+}
+
+.homeSwiper {
+      background-color: #ef394e;
+      margin-block: 10px;
+      padding: 20px;
+}
+
+.swiperSlide {
+      background-color: #fff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+}
+
+.swiperSlide *:not(.itemImg) {
+      margin: 10px;
+      max-height: 30px;
+}
+
+.itemsDisc {
+      background-color: #ef394e;
+      padding-block: 2px;
+      padding-inline: 6px;
+      border-radius: 15px;
+      color: #fff;
+}
+
+.itemImg {
+      max-height: 150px;
+      margin: 20px;
+}
+
+
+.itemDesc {
+      display: flex;
+      align-items: baseline;
+}
+
+.offer {
+      display: flex;
+      align-items: center;
+}
+
+.itemPrice {
+      display: flex;
+      flex-direction: column;
+}
+
+.swiperSlideFirst {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+}
+
+.swiperSlideFirst * {
+      text-align: center;
+      color: white;
+      max-height: 115px;
+}
+
+.swiperSlideFirst a {
+      filter: brightness(5);
+
+      &:hover {
+            color: #fff;
+      }
+}
+
+.scrollbar {
+      color: #fff;
+      background-color: #fff;
+}
+
+.price {
+      text-decoration: line-through;
+      color: #888;
+}

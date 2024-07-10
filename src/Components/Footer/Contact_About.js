@@ -18,22 +18,22 @@ export function Contact_About() {
                         <div className='d-flex flex-row flex-nowrap gap-3 mb-4'>
                               <div className='d-flex'>
                                     <a>
-                                          <img src='images/svgexport-41.svg'></img>
+                                          <img src='/images/svgexport-41.svg'></img>
                                     </a>
                               </div>
                               <div className='d-flex'>
                                     <a>
-                                          <img src='images/svgexport-42.svg'></img>
+                                          <img src='/images/svgexport-42.svg'></img>
                                     </a>
                               </div>
                               <div className='d-flex'>
                                     <a>
-                                          <img src='images/svgexport-43.svg'></img>
+                                          <img src='/images/svgexport-43.svg'></img>
                                     </a>
                               </div>
                               <div className='d-flex'>
                                     <a>
-                                          <img src='images/svgexport-44.svg'></img>
+                                          <img src='/images/svgexport-44.svg'></img>
                                     </a>
                               </div>
                         </div>

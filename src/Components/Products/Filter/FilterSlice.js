@@ -9,7 +9,7 @@ const FilterReducer = createSlice({
       initialState: FilterInitialData,
       reducers: {
             reset(state) {
-                  state.filter = initialFilterData.filter;
+                  state.filter = FilterInitialData.filter;
             },
             setavailableInDgkala(state) {
                   state.availableInDgkala = !state.availableInDgkala;

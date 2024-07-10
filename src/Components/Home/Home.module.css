@@ -1,0 +1,102 @@
+.feature img {
+      width: 60px;
+}
+
+.feature p {
+      font-size: 10px;
+}
+
+.feature {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+}
+
+.featureBox {
+      display: flex;
+}
+
+
+.MoreLinksConteainer {
+      object-fit: cover;
+      overflow: hidden;
+}
+
+
+.homeLink {
+      border-radius: 30px;
+      padding: 20px;
+      transform: scale(1);
+}
+
+
+.CategoryItem * {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+}
+
+.byCategory {
+      text-align: center;
+      margin-block: 30px;
+}
+
+.byCategory h4 {
+      margin-bottom: 40px;
+}
+
+.byCategory div {
+      margin-inline: 20px;
+}
+
+.recommendedProducts {
+      width: 94%;
+      overflow: hidden;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding-block: 10px;
+
+}
+
+.recommendedItem {
+      border-inline-end: .1rem solid #eee;
+      border-bottom: .1rem solid #ddd;
+}
+
+.recommendedItem img {
+      width: 100%;
+}
+
+.recommendedImg {
+      width: 50px;
+}
+
+
+.productsContainer {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transform: scale(1.3);
+      margin-bottom: 20px;
+      margin-block: 120px;
+      padding-block-end: 30px;
+}
+
+.card img {
+      width: 100%;
+      transform: scale(1.2);
+      margin-bottom: 40px;
+}
+
+.card p {
+      font-size: 10px;
+      margin-bottom: -20px;
+}

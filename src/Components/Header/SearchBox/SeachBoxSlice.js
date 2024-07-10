@@ -6,7 +6,6 @@ const SearchBoxSlice = createSlice({
       , initialState: searchBoxInitialData
       , reducers: {
             exitSearchBox(state) {
-
                   state.openSearch = false;
             },
             openSearchBox(state) {

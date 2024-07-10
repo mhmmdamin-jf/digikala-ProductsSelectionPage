@@ -1,0 +1,51 @@
+.menuContainer {
+
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 100%;
+      right: 2%;
+      animation: openAnimation .2s forwards ease-in-out;
+      display: flex;
+      padding: 20px;
+      gap: 40px;
+      height: 40vh;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 90%;
+      overflow: scroll;
+}
+
+
+@keyframes openAnimation {
+      from {
+            opacity: 20%;
+      }
+
+      to {
+            height: 60vh;
+      }
+}
+
+.primaryCategories {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-inline: 30px;
+      border-inline-end: 1px solid #d7d7d7;
+}
+
+.categoryButton {
+      background-color: inherit;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all .3s;
+      padding-inline: 30px;
+      padding-block: 10px;
+      width: 100%;
+
+}
+
+:global(.menuActive) {
+      background-color: #fff;
+}

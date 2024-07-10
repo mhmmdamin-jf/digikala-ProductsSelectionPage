@@ -25,7 +25,7 @@ export default function SearchBox({ dispatch }) {
             <section ref={boxSide} id="searchBox" className="search py-4 bg-light-1 d-flex flex-row justify-content-center" >
                   <div className='px-2 px-4-lg py-2 border-bottom border-2 w-95 border-primary pointer '>
                         <input id='#searchIn' className="search-box-in bg-light-1"></input>
-                        <img className="search-img-popup" src='images/svgexport-3.svg' />
+                        <img className="search-img-popup" src='/images/svgexport-3.svg' />
                         <span className='search-text-popup'>جستجو</span>
                   </div>
             </section >
